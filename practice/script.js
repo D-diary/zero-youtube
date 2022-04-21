@@ -110,6 +110,7 @@
         : buttonChange($btnMute, 'mute')
     })
     $player.addEventListener('ended', $player.pause())
+    $player.addEventListener('click', playVideo)
     $progress.addEventListener('click', getCurrent)
     $btnPlay.addEventListener('click', playVideo)
     $btnReplay.addEventListener('click', replayVideo)
